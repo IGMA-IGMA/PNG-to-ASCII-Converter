@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG to ASCII Converter</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PNG to ASCII Converter</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file">Выберите PNG файл:</label>
+            <input type="file" name="file" id="file" accept=".png" required>
+            <label for="width">Ширина ASCII (по умолчанию 100):</label>
+            <input type="number" name="width" id="width" min="10" max="1000" value="100">
+            <button type="submit">Конвертировать</button>
+        </form>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
